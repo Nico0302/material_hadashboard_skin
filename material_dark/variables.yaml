@@ -85,8 +85,8 @@ level_down_style: "color: $icon"
 
 # Widget Default Definitions
 
-scene_icon_on: mdi-checkbox-marked
-scene_icon_off: mdi-checkbox-blank-outline
+scene_icon_on: mdi-image
+scene_icon_off: mdi-image
 scene_icon_style_active: $style_active
 scene_icon_style_inactive: $style_inactive
 scene_title_style: $style_title
@@ -121,8 +121,8 @@ binary_sensor_title2_style: $style_title2
 binary_sensor_widget_style: $background_style
 binary_sensor_state_text_style: $text_style
 
-device_tracker_icon_on: mdi-user
-device_tracker_icon_off: mdi-user
+device_tracker_icon_on: mdi-account
+device_tracker_icon_off: mdi-account-off
 device_tracker_icon_style_active: $style_active
 device_tracker_icon_style_inactive: $style_inactive
 device_tracker_title_style: $style_title
@@ -130,8 +130,8 @@ device_tracker_title2_style: $style_title2
 device_tracker_widget_style: $background_style
 device_tracker_state_text_style: $text_style
 
-input_boolean_icon_on: mdi-sliders
-input_boolean_icon_off: mdi-sliders
+input_boolean_icon_on: mdi-toggle-switch-on
+input_boolean_icon_off: mdi-toggle-switch-off
 input_boolean_icon_style_active: $style_active
 input_boolean_icon_style_inactive: $style_inactive
 input_boolean_title_style: $style_title
@@ -148,8 +148,8 @@ switch_title2_style: $style_title2
 switch_widget_style: $background_style
 switch_state_text_style: $text_style
 
-lock_icon_on: mdi-unlock-alt
-lock_icon_off: mdi-lock
+lock_icon_on: mdi-lock
+lock_icon_off: mdi-lock-open
 lock_icon_style_active: $style_active_warn
 lock_icon_style_inactive: $style_inactive
 lock_title_style: $style_title
@@ -157,8 +157,8 @@ lock_title2_style: $style_title2
 lock_widget_style: $background_style
 lock_state_text_style: $text_style
 
-cover_icon_on: mdi-arrows-v
-cover_icon_off: mdi-arrows-v
+cover_icon_on: mdi-window-closed
+cover_icon_off: mdi-window-open
 cover_icon_style_active: $style_active_warn
 cover_icon_style_inactive: $style_inactive
 cover_title_style: $style_title
@@ -166,8 +166,8 @@ cover_title2_style: $style_title2
 cover_widget_style: $background_style
 cover_state_text_style: $text_style
 
-clock_date_style: "color: $white"
-clock_time_style: "color: $purple"
+clock_date_style: "color: $t_secondary"
+clock_time_style: "color: $text"
 clock_widget_style: $background_style
 
 weather_main_style: "color: $primary"
@@ -177,34 +177,34 @@ weather_widget_style: $background_style
 
 label_title_style: $style_title
 label_title2_style: $style_title2
-label_text_style: "color: $white"
+label_text_style: "color: $text"
 label_widget_style: $background_style
 
 sensor_title_style: $style_title
 sensor_title2_style: $style_title2
-sensor_value_style: "color: $blue; font-size: 250%"
-sensor_text_style: "color: $white; font-size: 100%"
-sensor_state_text_style: "color: $white; font-size: 100%"
-sensor_unit_style: "color: $blue; font-size: 100%"
+sensor_value_style: "color: $primary; font-size: 250%"
+sensor_text_style: "color: $text; font-size: 100%"
+sensor_state_text_style: "color: $text; font-size: 100%"
+sensor_unit_style: "color: $text; font-size: 100%"
 sensor_widget_style: $background_style
 
 alarm_title_style: $style_title
 alarm_title2_style: $style_title2
-alarm_state_style: "color: $white; font-size: 100%"
+alarm_state_style: "color: $text; font-size: 100%"
 alarm_widget_style: $background_style
 
-reload_icon_active: mdi-spinner mdi-spin
-reload_icon_inactive: mdi-refresh
-reload_icon_active_style: "color: $white"
-reload_icon_inactive_style: "color: $white"
+reload_icon_active: mdi-reload
+reload_icon_inactive: mdi-reload
+reload_icon_active_style: "color: $icon"
+reload_icon_inactive_style: "color: $icon"
 reload_title_style: $style_title
 reload_title2_style: $style_title2
 reload_widget_style: $background_style
 
-navigate_icon_active: mdi-spinner mdi-spin
-navigate_icon_inactive: mdi-gear
-navigate_icon_active_style: "color: $white"
-navigate_icon_inactive_style: "color: $white"
+navigate_icon_active: mdi-link
+navigate_icon_inactive: mdi-link
+navigate_icon_active_style: "color: $icon"
+navigate_icon_inactive_style: "color: $icon"
 navigate_title_style: $style_title
 navigate_title2_style: $style_title2
 navigate_widget_style: $background_style
@@ -241,8 +241,8 @@ light_title2_style: $style_title2
 light_icon_style_active: $style_active
 light_icon_style_inactive: $style_inactive
 light_state_text_style: $text_style
-light_level_style: "color: $white"
-light_unit_style:  "color: $white"
+light_level_style: "color: $text"
+light_unit_style:  "color: $text"
 light_level_up_style: $level_up_style
 light_level_down_style: "color: $icon"
 light_widget_style: $background_style
@@ -251,8 +251,8 @@ input_slider_icon_up: mdi-plus
 input_slider_icon_down: mdi-minus
 input_slider_title_style: $style_title
 input_slider_title2_style: $style_title2
-input_slider_level_style: "color: $blue"
-input_slider_unit_style: "color: $blue"
+input_slider_level_style: "color: $text"
+input_slider_unit_style: "color: $text"
 input_slider_level_up_style: $level_up_style
 input_slider_level_down_style: "color: $icon"
 input_slider_widget_style: $background_style
@@ -261,16 +261,16 @@ climate_icon_up: mdi-plus
 climate_icon_down: mdi-minus
 climate_title_style: $style_title
 climate_title2_style: $style_title2
-climate_level_style: "color: $blue"
-climate_unit_style: "color: $blue"
+climate_level_style: "color: $text"
+climate_unit_style: "color: $text"
 climate_level_up_style: $level_up_style
 climate_level_down_style: "color: $icon"
 climate_widget_style: $background_style
-climate_level2_style: "color: $blue"
-climate_unit2_style: "color: $blue"
+climate_level2_style: "color: $t_secondary"
+climate_unit2_style: "color: $t_secondary"
 
-group_icon_on: mdi-checkbox-multiple-marked-outline
-group_icon_off: mdi-checkbox-multiple-blank-outline
+group_icon_on: mdi-google-circles-communities
+group_icon_off: mdi-google-circles-communities
 group_icon_up: mdi-plus
 group_icon_down: mdi-minus
 group_title_style: $style_title
@@ -278,39 +278,39 @@ group_title2_style: $style_title2
 group_icon_style_active: $style_active
 group_icon_style_inactive: $style_inactive
 group_state_text_style: $text_style
-group_level_style: "color: $white"
+group_level_style: "color: $text"
 group_level_up_style: $level_up_style
 group_level_down_style: "color: $icon"
 group_widget_style: $background_style
-group_unit_style: "color: $white"
+group_unit_style: "color: $text"
 
-iframe_title_style: "$style_title; background-color: rgba(0, 0, 0, 0.5)"
+iframe_title_style: "$style_title;"
 iframe_widget_style: $background_style
 
-alarm_title_style: "color: $blue"
+alarm_title_style: "$style_title"
 alarm_widget_style: $background_style
 alarm_title2_style: $style_title2
-alarm_state_style: "color: $white;font-size: 100%"
-alarm_panel_state_style: "color: $white"
-alarm_panel_code_style: "color: $white"
-alarm_panel_background_style: "background-color: $gray_dark"
-alarm_panel_button_style: "background-color: $gray_medium"
+alarm_state_style: "color: $primary; font-size: 1.8em; text-transform: uppercase;"
+alarm_panel_state_style: "color: $t_secondary; font-size: 1em; margin: 16px;"
+alarm_panel_code_style: "color: $text; font-size: 1.6em; margin-top: 16px; margin-bottom: 20px;"
+alarm_panel_background_style: $background_style
+alarm_panel_button_style: "background-color: unset; border-radius: 2em; text-transform: uppercase; margin: 0px;"
 
 camera_widget_style: $background_style
-camera_title_style: "$style_title; background-color: rgba(0, 0, 0, 0.5)"
+camera_title_style: "$style_title;"
 
 gauge_widget_style: $background_style
 gauge_title_style: $style_title
 gauge_title2_style: $style_title2
-gauge_low_value_color: "$blue"
-gauge_med_value_color: "$blue"
-gauge_high_value_color: "$blue"
-gauge_value_bgcolor: "$gray_medium"
-gauge_text_color: "$blue"
+gauge_low_value_color: "$p_light"
+gauge_med_value_color: "$primary"
+gauge_high_value_color: "$p_dark"
+gauge_value_bgcolor: "$i_inactive"
+gauge_text_color: "$text"
 
 rss_title_style: $style_title
 rss_title2_style: $style_title2
-rss_text_style: "color: $blue"
+rss_text_style: "color: $text"
 rss_widget_style: $background_style
 
 input_select_title_style: $style_title
@@ -337,8 +337,8 @@ vertical_input_slider_slider_style: ""
 vertical_input_slider_container_style: ""
 vertical_input_slider_widget_style: $background_style
 
-light_with_brightness_icon_on: mdi-lightbulb
-light_with_brightness_icon_off: mdi-lightbulb
+light_with_brightness_icon_on: mdi-lightbulb-outline
+light_with_brightness_icon_off: mdi-lightbulb-outline
 light_with_brightness_title_style: $style_title
 light_with_brightness_title2_style: $style_title2
 light_with_brightness_slider_style: ""
@@ -346,11 +346,11 @@ light_with_brightness_widget_style: $background_style
 light_with_brightness_icon_style_active: $style_active
 light_with_brightness_icon_style_inactive: $style_inactive
 
-light_with_colorpicker_icon_on: mdi-lightbulb
-light_with_colorpicker_icon_off: mdi-lightbulb
+light_with_colorpicker_icon_on: mdi-lightbulb-outline
+light_with_colorpicker_icon_off: mdi-lightbulb-outline
 light_with_colorpicker_title_style: $style_title
 light_with_colorpicker_title2_style: $style_title2
-light_with_colorpicker_button_style: ""
+light_with_colorpicker_button_style: "background_color: $primary"
 light_with_colorpicker_widget_style: $background_style
 light_with_colorpicker_icon_style_active: $style_active
 light_with_colorpicker_icon_style_inactive: $style_inactive
